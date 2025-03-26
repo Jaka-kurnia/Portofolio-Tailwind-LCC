@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="bg-gray-50">
+    <!-- Navbar -->
     <header class="fixed w-full flex justify-between bg-blue-600 text-white px-10 py-5 shadow-lg z-40">
       <!-- Kiri -->
       <div class="font-bold">
@@ -13,23 +20,28 @@
       </div>
       <!-- Kanan -->
       <div class="md:flex gap-5 hidden">
-        <p>Beranda</p>
-        <p>Tentang Saya</p>
-        <p>Porofolio</p>
-        <p>Clients</p>
-        <p>Blog</p>
-        <p>Contact</p>
+        <a href="#section1">Home</a>
+        <a href="#section2">About Me</a>
+        <a href="#section3">Portofolio</a>
+        <a href="#section4">Achievment</a>
+        <a href="#section5">Blog</a>
+        <a href="#section6">Contact</a>
       </div>
     </header>
     <!-- Section 1 -->
-    <section class="md:flex pt-24 md:pt-0 justify-between h-screen items-center px-10 z-50">
+    <section id="section1" class="md:flex pt-24 md:pt-0 justify-between h-screen items-center px-10 z-50">
       <div class="w-full">
-        <p class="text-blue-300">Hallo semua, saya</p>
+        <p class="text-blue-400">Hallo semua, saya</p>
         <h1 class="text-5xl font-bold">Jaka Kurnia</h1>
-        <p class="mt-3">Student & Programming</p>
-        <p class="mt-3">Belajar web programming mudah dan menyenangkan bukan.</p>
+        <p class="mt-3">Student & Frontend Developer</p>
+        <p class="mt-3">Belajar web programming mudah dan menyenangkan bukan?</p>
         <p>Bukan!!</p>
-        <button class="mt-3 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-950 cursor-pointer">Hubungi saya</button>
+        <div class="mt-3 gap-5 flex">
+          <i class="fi fi-brands-whatsapp text-4xl text-green-500"></i>
+          <i class="fi fi-brands-instagram text-4xl text-pink-600"></i>
+          <i class="fi fi-brands-telegram text-4xl text-blue-400"></i>
+        </div>
+        <button class="mt-5 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-950 cursor-pointer"><a href="#section6">Hubungi Saya</a></button>
       </div>
       <div class="w-full flex justify-center relative">
         <img src="img/saya.png" class="w-[353px] md:[750px] items-center px-[33px]" />
@@ -40,76 +52,75 @@
     </section>
 
     <!-- section 2 -->
-    <section class="md:flex justify-around px-10 py-24 mt-10 md:-0">
+    <section id="section2" class="md:flex justify-around px-10 py-24 mt-10 md:-0" data-aos="fade-up" data-aos-duration="3000">
       <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
         <p class="text-blue-400 font-semibold">TENTANG SAYA</p>
         <h2 class="text-2xl font-bold my-2">
           Yuk, belajar web<br />
           programming di LP3I
         </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempore dolore commodi quam maiores, facilis quod accusamus eum dolores voluptatem!</p>
+        <p>Saya seorang mahasiswa D3 Manajemen Informatika di LP3I Kampus Tasikmalaya dan saya adalah calon Developer berbakat dari salah satu kota di Indonesia.</p>
       </div>
       <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-        <h2 class="text-xl font-semibold mb-1 text-blue-400">Mari Berteman</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius praesentium inventore iusto, error obcaecati quaerat dolorem neque molestiae quis aliquid.</p>
+        <p class="text-blue-400 font-semibold">MARI BERTEMAN</p>
+        <h2 class="text-2xl font-bold my-2">
+          Yuk, bangun jaringan<br />
+          pertemanan di dunia pemrograman
+        </h2>
+        <p>Mari berteman, kode yang baik tumbuh dari kolaborasi yang solid. Mari kita bangun jaringan pertemanan pemrograman yang salin mendukung dan berkembang.</p>
       </div>
     </section>
 
     <!-- Section 3 -->
-    <section class="px-10 py-24">
+    <section id="section3" class="px-10 py-24" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <div class="text-center">
         <p class="text-blue-400 font-semibold">Portofolio</p>
         <h1 class="text-3xl font-bold">Project Terbaru</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni numquam
-          <br />
-          fugiat ipsam necessitatibus quaerat quod asperiores velit voluptas ab fugit?
-        </p>
+        <p class="mt-4">Project yang saya kerjakan dalam beberapa bulan terahir. Project ini bertujuan mengembangkan solusi inofatif di bidang IT dengan fokus pada pengembangan aplikasi, analisis data dan kecerdasan buatan. Dengan memanfaatkan teknologi terkini, project ini dirancang untuk meningkatkan efesiensi dan memberikan pengalaman penguna yang lebih baik.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-10 mt-10">
         <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-          <img src="img/gambar 2.jpg" class="w-[100%]" />
-          <h1 class="text-2xl font-semibold">Jaka Kurnia Landing Page</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae libero tempora autem voluptas earum voluptates dignissimos maiores eaque maxime?</p>
+          <img src="img/Project1.png" class="w-[100%]" />
+          <h1 class="text-2xl font-semibold">Presensi Organisasi Mahasiswa</h1>
+          <p>Sistem presensi secara online memungkinkan pencatatan kehadiran anggota secara otomatis dan real-time, sehingga memudahkan pemantauan aktifitas ormawa tanpa perlu mengunakan metode manual yang memakan waktu cukup lama.</p>
         </div>
-
         <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-          <img src="img/gambar 2.jpg" class="w-[100%]" />
-          <h1 class="text-2xl font-semibold">Jaka Kurnia Landing Page</h1>
+          <img src="img/Project2.png" class="w-[100%]" />
+          <h1 class="text-2xl font-semibold">Sorce code dari Web Presensi Ormawa</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repudiandae libero tempora autem voluptas earum voluptates dignissimos maiores eaque maxime?</p>
         </div>
       </div>
     </section>
 
     <!-- Section 4 -->
-    <section class="px-10 py-24">
+    <section id="section4" class="px-10 py-24" data-aos="fade-down-left">
       <div class="text-center">
         <p class="text-blue-400">Achievment</p>
         <h1 class="text-2xl font-semibold">Penghargaan Yang Pernah Saya Capai</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ullam quisquam beatae maxime debitis voluptas enim in iure eligendi quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ullam.</p>
+        <p class="mt-1"></p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
         <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-          <img src="img/gambar 2.jpg" alt="" />
-          <h2>Tips Belajar Programming</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab exercitationem quasi eveniet illum, fuga soluta possimus neque quod molestias.</p>
+          <img src="img/cyber.jpg" alt="" />
+          <h2>Cyber Scurity</h2>
+          <p>Kegunaan Cybersecurity secara umum adalah untuk melindungi sistem komputer, jaringan, data, dan informasi dari ancaman yang dapat merusak, mencuri, atau mengaksesnya tanpa izin.</p>
           <div class="pb-10">
             <a href="" class="px-1 underline">Baca Selengkapnya</a>
           </div>
         </div>
         <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-          <img src="img/gambar 2.jpg" alt="" />
-          <h2>Tips Belajar Programming</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab exercitationem quasi eveniet illum, fuga soluta possimus neque quod molestias.</p>
+          <img src="img/cyber dokumen.jpg" alt="" />
+          <h2>Dokumentasi</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda iure delectus praesentium alias consectetur facilis natus doloribus incidunt dignissimos.</p>
           <div class="pb-10">
             <a href="" class="px-1 underline">Baca Selengkapnya</a>
           </div>
         </div>
         <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-          <img src="img/gambar 2.jpg" alt="" />
-          <h2>Tips Belajar Programming</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab exercitationem quasi eveniet illum, fuga soluta possimus neque quod molestias.</p>
+          <img src="img/Sertifikat2.png" alt="" />
+          <h2>Problem Solver</h2>
+          <p>Problem solver merujuk pada seseorang atau proses yang memiliki kemampuan untuk mengidentifikasi, menganalisis, dan menyelesaikan masalah dengan cara yang efektif dan efisien. Seorang problem solver tidak hanya mengatasi masalah yang dihadapi, tetapi juga mampu mencari solusi yang optimal melalui pendekatan yang sistematis.</p>
           <div class="pb-10">
             <a href="" class="px-1 underline">Baca Selengkapnya</a>
           </div>
@@ -118,7 +129,7 @@
     </section>
 
     <!-- Section 5 -->
-    <section class="px-10 py-24">
+    <section id="section5" class="px-10 py-24" data-aos="zoom-in-up">
       <div class="text-center">
         <p class="text-blue-400">Blog</p>
         <h1 class="text-2xl font-semibold">Tulisan Terkini</h1>
@@ -126,25 +137,25 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
         <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-          <img src="img/gambar 2.jpg" alt="" />
-          <h2>Tips Belajar Programming</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab exercitationem quasi eveniet illum, fuga soluta possimus neque quod molestias.</p>
+          <img src="img/html.png" alt="" />
+          <h2>HTML (HyperText Markup Language)</h2>
+          <p>Merupakan bahasa markup yang digunakan untuk membuat dan menyusun struktur halaman web. HTML memberikan kerangka dasar untuk konten di web, seperti teks, gambar, video, dan elemen-elemen interaktif lainnya.</p>
           <div class="pb-10">
             <a href="" class="px-1 underline">Baca Selengkapnya</a>
           </div>
         </div>
         <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-          <img src="img/gambar 2.jpg" alt="" />
-          <h2>Tips Belajar Programming</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab exercitationem quasi eveniet illum, fuga soluta possimus neque quod molestias.</p>
+          <img src="img/css.png" alt="" />
+          <h2>CSS (Cascading Style Sheets)</h2>
+          <p>Merupakan bahasa yang digunakan untuk mengatur tampilan dan format elemen-elemen dalam halaman web yang dibuat dengan Html. Css memungkinkan pengembang untuk memisahkan struktur konten Html dengan desain visualnya.</p>
           <div class="pb-10">
             <a href="" class="px-1 underline">Baca Selengkapnya</a>
           </div>
         </div>
         <div class="w-full mt-10 p-5 shadow-xl md:mt-0">
-          <img src="img/gambar 2.jpg" alt="" />
-          <h2>Tips Belajar Programming</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab exercitationem quasi eveniet illum, fuga soluta possimus neque quod molestias.</p>
+          <img src="img/js.png" alt="" />
+          <h2>JavaScript (JS)</h2>
+          <p>Merupakan bahasa pemrograman yang digunakan untuk membuat halaman web interaktif dan dinamis. JavaScript berjalan di sisi klien (browser) dan memungkinkan pengembang untuk menambahkan fungsionalitas seperti animasi, form validation, dan interaksi dengan pengguna.</p>
           <div class="pb-10">
             <a href="" class="px-1 underline">Baca Selengkapnya</a>
           </div>
@@ -153,13 +164,13 @@
     </section>
 
     <!-- Section 6 -->
-    <section class="px-10 py-24">
+    <section id="section6" class="px-10 py-24" data-aos="zoom-in-down">
       <div class="text-center">
         <p class="text-blue-400">Contact</p>
-        <h1 class="font-semibold text-2xl">Hubungi Kami</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat sequi ab officiis provident ipsam quos veniam doloribus voluptatum optio!</p>
+        <h1 class="font-semibold text-2xl">Bersama Kami, Solusi Ada Di Tangan Anda</h1>
+        <p>Hubungi kami untuk mendapatkan informasi lebih lanjut atau dukungan terkait kebutuhan Anda. Kami siap memberikan solusi terbaik!</p>
       </div>
-      <form action="" class="mx-64 mt-10 p-5 shadow-xl md:mt-0 pt-4">
+      <form action="" class="md:mx-52 mt-10 p-5 shadow-xl md:mt-0 pt-4">
         <div class="mt-5">
           <p class="text-blue-500 font-semibold">Nama</p>
           <input type="text" class="w-full border border-gray-200 rounded-md px-7 py-2 bg-gray-100 focus:border-blue-600 focus:outline-none" placeholder="Masukan nama anda disini......" />
@@ -173,6 +184,68 @@
           <textarea class="w-full border border-gray-200 rounded-md px-7 py-2 bg-gray-100 focus:border-blue-600 focus:outline-none" placeholder="Isi pesan anda disini....."></textarea>
         </div>
       </form>
+      <div class="items-center w-full flex justify-center mt-8">
+        <button class="mt-3 bg-blue-600 text-white px-16 py-2 rounded-full hover:bg-blue-950 cursor-pointer"><a href="sukses.html">Submit</a></button>
+      </div>
     </section>
+
+    <!-- Section 7-->
+    <footer id="section7" class="px-10 py-24 bg-blue-900 text-white" data-aos="fade-up">
+      <div class="md:flex justify-between">
+        <div class="w-full my-10 md:my-0 md:flex justify-center">
+          <div>
+            <h1 class="font-semibold text-2xl">J.Code</h1>
+            <p class="mt-3">Hubungi Kami</p>
+            <p>Jl.Kikisik Tasikmalaya Jawa Barat</p>
+          </div>
+          <div class="w-full my-10 md:my-0 md:flex justify-center">
+            <div>
+              <h1 class="font-semibold text-2xl">Kategori Penulisan</h1>
+              <p class="mt-3">Programming</p>
+              <p>Teknologi</p>
+              <p>Gaya Hidup</p>
+            </div>
+          </div>
+          <div class="w-full my-10 md:my-0 md:flex justify-center">
+            <div>
+              <h1 class="font-semibold text-2xl">Tautan</h1>
+              <p class="mt-3">Home</p>
+              <p>About Me</p>
+              <p>Portofolio</p>
+              <p>Achivment</p>
+              <p>Blog</p>
+              <p>Contact</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 mt-2 md:0">
+        <div>
+          <i class="fi fi-brands-whatsapp text-3xl text-green-500 "></i>
+        </div>
+        <div class="text-center">
+          <p>081220398391</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 mt-2 md:0">
+        <div>
+          <i class="fi fi-brands-instagram text-3xl text-pink-600"></i>
+        </div>
+        <div class="text-center">
+          <p>Jaka_Tarubbb</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 mt-2 md:0">
+        <div>
+          <i class="fi fi-brands-telegram text-3xl text-blue-400"></i>
+        </div>
+        <div class="text-center">
+          <p>Jaka_Tarubbb</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
